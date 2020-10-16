@@ -9,13 +9,17 @@ def prompt_input(prompt, errormsg):
     while is_int == False:
         try:
             number = int(input(prompt))
-        except ValueError:
+        except ValueError or number == 1:
             print(errormsg)
         else:
             is_int = True
+        if number == 1:
+            print(errormsg)
+            is_int = False
     return number
 def check_prime(number):
     """
     Checks whether an integer is a prime number. Returns False
     if the number isn't a prime; if it is a prime, returns True
     """
+prime_number = prompt_input("Give an integer that's bigger than 1:", "You had one job")
