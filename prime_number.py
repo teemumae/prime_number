@@ -13,9 +13,9 @@ def prompt_input(prompt, errormsg):
             print(errormsg)
         else:
             is_int = True
-        if input_number == 1 and is_int == True:
-            print(errormsg)
-            is_int = False
+            if input_number == 1 and is_int == True:
+                print(errormsg)
+                is_int = False
     return input_number
 def check_prime(number):
     """
