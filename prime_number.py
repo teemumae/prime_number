@@ -23,7 +23,7 @@ def check_prime(number):
     if the number isn't a prime; if it is a prime, returns True
     """
     prime = False
-    for i in range(number):
+    for i in range(2, number):
         if number % i !=0:
             prime = True
     return prime
